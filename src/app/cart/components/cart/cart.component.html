@@ -1,0 +1,12 @@
+<p>cart works!</p>
+
+<div *ngIf="products.length < 1">
+  Cart is empty!
+</div>
+<div *ngIf="products.length > 0">
+  <ul>
+    <li *ngFor="let product of products">
+      Product Name: {{product.name}}
+    </li>
+  </ul>
+</div>
